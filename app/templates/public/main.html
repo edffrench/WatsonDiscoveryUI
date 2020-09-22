@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        
+                
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+
+
+        <title></title>
+
+        <script src="https://kit.fontawesome.com/00d6e9583e.js" crossorigin="anonymous"></script>
+
+        <link rel='stylesheet' href='{{ url_for('static', filename='css/style-dark.css') }}'>
+
+    </head>
+
+    <body>
+
+        <div class='main-container'>
+        
+            <nav>
+                <div class="title" href='http://127.0.0.1:5000/search-page'>
+                    <p><b>Watson Discovery : </b> Uncovering hidden potenital demo</p>
+                </div>
+
+                <div class="logo">
+                    <p>IBM</p>
+                </div>
+            </nav>
+            
+            <div id='particles-js'>
+                
+                <div class='intro-text-container'>
+                    <div class='intro-text-title'>
+                        <p>Welcome to <b>IBM Discover</b></p>
+                    </div>
+                    <div class='intro-text-subtitle'>
+                        <p>The leading AI discovery application, focus on what's most important ...</p>
+                    </div>
+                </div>
+            
+            
+                <div id='search-bar' class='search-container'>
+                    <input id='search-query' class='search-text' type='search-text' name='' placeholder='Discover hidden potential'>
+                    <a id='search-btn1' class='search-btn'>
+                        <i class='fas fa-search'></i>
+                    </a>
+                </div>  
+              
+            </div>
+
+            <footer class='footer'>
+                All rights reserved to IBM
+            </footer>
+    
+            
+        </div>
+
+        <script src='{{ url_for('static', filename='js/main.js') }}'></script>
+        <script src='{{ url_for('static', filename='js/particles.js') }}'></script>
+        <script src='{{ url_for('static', filename='js/app.js') }}'></script>
+
+    </body>
+
+</html>
+

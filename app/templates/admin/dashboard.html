@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        
+                
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+
+
+        <title></title>
+
+        <script src="https://kit.fontawesome.com/00d6e9583e.js" crossorigin="anonymous"></script>
+
+        <link rel='stylesheet' href='{{ url_for('static', filename='css/admin-style-dark.css') }}'>
+
+    </head>
+
+    <body>
+        <div class='outside'>
+            <nav>
+                <a class="title" href='http://127.0.0.1:5000'>
+                    <p><b>Watson Discovery : </b> Uncovering hidden potenital demo</p>
+                </a>
+
+                <div class="logo">
+                    <p>IBM</p>
+                </div>
+            </nav>
+
+            <div class='search-bar'>
+                <div class='search-container'>
+                    <input class='search-text' type='search-text' name='' placeholder='Discover hidden potential'>
+                    <a class='search-btn' href='http://127.0.0.1:5000/admin/dashboard'>
+                        <i class='fas fa-search'></i>
+                    </a>
+                </div>  
+
+                <a class='user-btn' href='http://127.0.0.1:5000/search-page'>
+                    <p>public</p>
+                </a>
+
+            </div>
+            
+            <div class='dashboard-panel'>
+                <div class='dashboard-icons'>
+                    <a class='dash-btn' href='http://127.0.0.1:5000/admin/dashboard'>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </a>
+                </div>
+
+                <div class='dashboard-textbox'>
+                    <p class='dashboard-text'>dashboard</p>
+                </div>
+
+                <div class='dashboard-icons'>
+                    <a class='dash-btn' href='http://127.0.0.1:5000'>
+                        <i class='fas fa-search'></i>
+                    </a>
+                </div>
+
+                <div class='dashboard-textbox'>
+                    <p class='dashboard-text'>Search</p>
+                </div>
+
+                <div class='dashboard-icons'>
+                    <a class='dash-btn' href='http://127.0.0.1:5000/admin/dashboard'>
+                        <i class="fas fa-chart-line"></i>
+                    </a>
+                </div>
+
+                <div class='dashboard-textbox'>
+                    <p class='dashboard-text'>Track</p>
+                </div>
+
+                <div class='dashboard-icons'>
+                    <a class='dash-btn' href='http://127.0.0.1:5000/admin/dashboard'>
+                        <i class="fas fa-users"></i>
+                    </a>
+                </div>
+
+                <div class='dashboard-textbox'>
+                    <p class='dashboard-text'>Users</p>
+                </div>
+
+            </div>
+
+            <div class='dashboard-container'>
+        
+            </div>
+
+        </div>
+
+        <footer class='footer'>
+            All rights reserved to IBM
+        </footer>
+
+        
+
+        <script src='{{ url_for('static', filename='js/app.js') }}'></script>
+    </body>
+
+</html>
+
